@@ -1,1 +1,1 @@
-gunicorn --bind=0.0.0.0 --timeout 600 --config gunicorn.conf.py app:app
+gunicorn --config gunicorn.conf.py --bind 0.0.0.0:$PORT app:app
